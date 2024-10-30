@@ -25,6 +25,7 @@ type Producter []struct {
 	Description string  `json:"description"`
 	Category    string  `json:"category"`
 	Image       string  `json:"image"`
+	Image2      string  `json:"image2"`
 	Rating      struct {
 		Rate  float64 `json:"rate"`
 		Count int     `json:"count"`
@@ -32,6 +33,8 @@ type Producter []struct {
 }
 
 func main() {
+	// this is a comment
+	//hej hej
 	//url := "https://fakestoreapi.com/products"
 	url := "http://localhost:3000/posts"
 
@@ -45,7 +48,6 @@ func main() {
 	}
 	//fmt.Println(string(body))
 
-	//data_obj := Producter{}
 	data_obj := Posts{}
 
 	jsonErr := json.Unmarshal(body, &data_obj)

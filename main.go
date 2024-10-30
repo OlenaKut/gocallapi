@@ -33,6 +33,7 @@ type Producter []struct {
 }
 
 func main() {
+	// this is a comment
 	//hej hej
 	//url := "https://fakestoreapi.com/products"
 	url := "http://localhost:3000/posts"
